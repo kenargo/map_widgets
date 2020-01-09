@@ -31,7 +31,7 @@ This is a collection of UI compound components that you can use with mapping app
 
 #### See example images below
 
-![](https://github.com/kenargo/map_widgets/blob/master/readmeImages/Image_1.png)
+![](https://github.com/kenargo/map_widgets/blob/master/readmeImages/AllWidgets.png)
 
 ![](https://github.com/kenargo/map_widgets/blob/master/readmeImages/WidgetMapCenterLock.png)
 
