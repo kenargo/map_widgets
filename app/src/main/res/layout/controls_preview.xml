@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlsKotlinPreview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="ClearAll"
+            tools:ignore="HardcodedText" />
+
+        <com.kenargo.map_widgets.WidgetClearAll
+            android:id="@+id/widgetClearAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <View style="@style/Divider.Horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="WidgetMapRecenter"
+            tools:ignore="HardcodedText" />
+
+        <com.kenargo.map_widgets.WidgetRecenter
+            android:id="@+id/widgetRecenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View style="@style/Divider.Horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="WidgetMapType"
+            tools:ignore="HardcodedText" />
+
+        <com.kenargo.map_widgets.WidgetMapType
+            android:id="@+id/widgetMapType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:widgetMapTypeDismissOnSelection="false"
+            app:widgetMapTypeOptions="normal|satellite|terrain|hybrid"
+            app:widgetMapTypeSelection="normal" />
+
+        <View style="@style/Divider.Horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="WidgetMapCenterLock"
+            tools:ignore="HardcodedText" />
+
+        <com.kenargo.map_widgets.WidgetMapCenterLock
+            android:id="@+id/widgetMapCenterLock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:widgetMapCenterLockDismissOnSelection="true"
+            app:widgetMapCenterLockOptions="pilot|takeoff|aircraft"
+            app:widgetMapCenterLockSelection="none" />
+
+        <View style="@style/Divider.Horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="WidgetLocationCoordinate"
+            tools:ignore="HardcodedText" />
+
+        <com.kenargo.map_widgets.WidgetLocationCoordinate
+            android:id="@+id/widgetLocationCoordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:widgetLocationCoordinateLatitude="1.23"
+            app:widgetLocationCoordinateLatitudePattern=""
+            app:widgetLocationCoordinateLongitude="34.5"
+            app:widgetLocationCoordinateLongitudePattern="" />
+
+        <View style="@style/Divider.Horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>

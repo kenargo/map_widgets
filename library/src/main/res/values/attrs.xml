@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WidgetMapType">
+        <attr name="widgetMapTypeSelection">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="satellite" value="2" />
+            <enum name="terrain" value="3" />
+            <enum name="hybrid" value="4" />
+        </attr>
+
+        <attr name="widgetMapTypeOptions" format="flags">
+            <flag name="normal" value="0x01" />
+            <flag name="satellite" value="0x02" />
+            <flag name="terrain" value="0x04" />
+            <flag name="hybrid" value="0x08" />
+        </attr>
+
+        <attr name="widgetMapTypeDismissOnSelection" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="WidgetMapCenterLock">
+        <attr name="widgetMapCenterLockSelection">
+            <enum name="none" value="0" />
+            <enum name="pilot" value="1" />
+            <enum name="takeoff" value="2" />
+            <enum name="aircraft" value="3" />
+        </attr>
+
+        <attr name="widgetMapCenterLockOptions" format="flags">
+            <flag name="pilot" value="0x01" />
+            <flag name="takeoff" value="0x02" />
+            <flag name="aircraft" value="0x04" />
+        </attr>
+
+        <attr name="widgetMapCenterLockDismissOnSelection" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="WidgetLocationCoordinate">
+        <attr name="widgetLocationCoordinateLatitude" format="string" />
+        <attr name="widgetLocationCoordinateLatitudePattern" format="string" />
+
+        <attr name="widgetLocationCoordinateLongitude" format="string" />
+        <attr name="widgetLocationCoordinateLongitudePattern" format="string" />
+
+    </declare-styleable>
+
+</resources>

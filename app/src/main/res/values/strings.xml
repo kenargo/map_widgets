@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Map Widgets Sample</string>
+
+    <string-array name="appDarkModeOptions">
+        <item>Follow System</item>
+        <item>Auto Battery</item>
+        <item>Dark Mode</item>
+        <item>Light Mode</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+</resources>

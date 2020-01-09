@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="widgetMapTypeTitle">MAP TYPE:</string>
+    <string name="widgetMapTypeNormal">Normal</string>
+    <string name="widgetMapTypeSatellite">Satellite</string>
+    <string name="widgetMapTypeTerrain">Terrain</string>
+    <string name="widgetMapTypeHybrid">Hybrid</string>
+
+    <string name="widgetMapCenterLockMoveTo">MOVE TO:</string>
+    <string name="widgetMapCenterLockPilot">Pilot</string>
+    <string name="widgetMapCenterLockTakeOff">Take-off</string>
+    <string name="widgetMapCenterLockAircraft">Aircraft</string>
+    <string name="widgetLocationCoordinateCoordinate">Coordinates:</string>
+    <string name="widgetLocationCoordinateLatitude">Latitude</string>
+    <string name="widgetLocationCoordinateLongitude">Longitude</string>
+    <string name="widgetLocationCoordinateMissingOrInvalidLatitude">Missing or invalid latitude</string>
+    <string name="widgetLocationCoordinateMissingOrInvalidLongitude">Missing or invalid longitude</string>
+
+</resources>
