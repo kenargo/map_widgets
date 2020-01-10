@@ -31,9 +31,9 @@ class WidgetMapCenterLock @JvmOverloads constructor(
     var dismissOnSelection = false
     var displayOptionsFlags = 0xFF
 
-    private var onSelectionChangeListener: Interfaces.WidgetMapCenterLockChange? = null
+    private var onSelectionChangeListener: MapWidgetInterfaces.WidgetMapCenterLockChange? = null
 
-    fun setOnSelectionChange(listener: Interfaces.WidgetMapCenterLockChange) {
+    fun setOnSelectionChange(listener: MapWidgetInterfaces.WidgetMapCenterLockChange) {
         onSelectionChangeListener = listener
     }
 

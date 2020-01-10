@@ -3,7 +3,7 @@ package com.kenargo.mapwidgetsampleapp
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.kenargo.map_widgets.Interfaces
+import com.kenargo.map_widgets.MapWidgetInterfaces
 import kotlinx.android.synthetic.main.controls_preview.*
 
 class ControlsKotlinPreview : AppCompatActivity() {
@@ -20,11 +20,11 @@ class ControlsKotlinPreview : AppCompatActivity() {
             Toast.makeText(this, "clicked", Toast.LENGTH_LONG).show()
         }
 
-        widgetMapType.setOnSelectionChange(Interfaces.WidgetMapTypeChange {
+        widgetMapType.setOnSelectionChange(MapWidgetInterfaces.WidgetMapTypeChange {
             Toast.makeText(this, "clicked: $it", Toast.LENGTH_LONG).show()
         })
 
-        widgetMapCenterLock.setOnSelectionChange(Interfaces.WidgetMapCenterLockChange {
+        widgetMapCenterLock.setOnSelectionChange(MapWidgetInterfaces.WidgetMapCenterLockChange {
             Toast.makeText(this, "clicked: $it", Toast.LENGTH_LONG).show()
         })
     }

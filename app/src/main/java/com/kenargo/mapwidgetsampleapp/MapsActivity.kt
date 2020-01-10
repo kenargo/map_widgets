@@ -9,7 +9,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import com.kenargo.map_widgets.Interfaces
+import com.kenargo.map_widgets.MapWidgetInterfaces
 import kotlinx.android.synthetic.main.activity_maps.*
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -49,7 +49,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         widgetLocationCoordinate.setCoordinates(someLocation.latitude, someLocation.longitude)
 
-        widgetLocationCoordinate.setOnLocationChange(Interfaces.MapLocationUpdateChange {
+        widgetLocationCoordinate.setOnLocationChange(MapWidgetInterfaces.MapLocationUpdateChange {
             marker!!.position = LatLng(it!!.latitude, it.longitude)
             mMap.moveCamera(CameraUpdateFactory.newLatLng(marker!!.position))
         })

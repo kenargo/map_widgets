@@ -32,9 +32,9 @@ class WidgetMapType @JvmOverloads constructor(
     var dismissOnSelection = false
     var displayOptionsFlags = 0xFF
 
-    private var onSelectionChangeListener: Interfaces.WidgetMapTypeChange? = null
+    private var onSelectionChangeListener: MapWidgetInterfaces.WidgetMapTypeChange? = null
 
-    fun setOnSelectionChange(listener: Interfaces.WidgetMapTypeChange) {
+    fun setOnSelectionChange(listener: MapWidgetInterfaces.WidgetMapTypeChange) {
         onSelectionChangeListener = listener
     }
 

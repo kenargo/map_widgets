@@ -22,9 +22,9 @@ class WidgetLocationCoordinate @JvmOverloads constructor(
     private var lastValidLongitude = 0.0
 
 
-    private var onLocationChangeListener: Interfaces.MapLocationUpdateChange? = null
+    private var onLocationChangeListener: MapWidgetInterfaces.MapLocationUpdateChange? = null
 
-    fun setOnLocationChange(listener: Interfaces.MapLocationUpdateChange) {
+    fun setOnLocationChange(listener: MapWidgetInterfaces.MapLocationUpdateChange) {
         onLocationChangeListener = listener
     }
 
