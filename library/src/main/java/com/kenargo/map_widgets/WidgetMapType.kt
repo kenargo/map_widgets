@@ -201,9 +201,9 @@ class WidgetMapType @JvmOverloads constructor(
 
         init {
 
-            // Don't set 'isOutsideTouchable = true' or the popup will not close when the user touches
-            //  the top widget icon
-            //isOutsideTouchable = true
+            // Don't use isOutsideTouchable or the PopupWindow for hide/show if the user touches the droplist
+            // to dismiss it.
+            isFocusable = true
 
             // Process the 'displayOptionsFlags'
             linearLayoutNormal.visibility = if (displayOptionsFlags and 0x01 != 0) {
